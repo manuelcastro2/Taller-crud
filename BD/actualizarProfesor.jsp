@@ -29,7 +29,6 @@
                     </sql:query>
                     <form method="post">
                         <c:forEach var="itema" items="${taller.rows}">
-
                             <input type="text"name="cedula" id="cedula" value="${itema.cedula}">
                             <br>
                             <input type="text"name="nombre" id="nombre" value="${itema.nombre}">
@@ -41,13 +40,13 @@
                                 <option value="especialidad">especiales</option>
                                 <option value="profesional">otros</option>
                             </select>
-<br>
+                            <br>
                             <input type="text"name="area" id="area" value="${itema.area}">
-<br>
+                            <br>
                             <input type="text"name="telefono" id="telefono" value="${itema.telefono}">
-<br>
+                            <br>
                             <textarea name="descripcion" id="descripcion" cols="20" rows="3">${itema.descripcion}</textarea>
-<br>
+                            <br>
                         </c:forEach>
                         <input type="hidden" name="modificar" id="modificar" value="si">
                         <button type="submit">ENVIAR</button>
@@ -56,24 +55,16 @@
                 <c:if test="${param.modificar !=null}">
         <sql:update var="result" dataSource="${taller}">
             update taller 
-            set cedula='${param.cedula}',
-            nombre='${param.nombre}',
-            area='${param.area}',
-            categoria='${param.categoria}',
-            telefono='${param.telefono}',
-            descripcion='${param.descripcion}'
+            set cedula='${param.cedula}', nombre='${param.nombre}', area='${param.area}',categoria='${param.categoria}', telefono='${param.telefono}', descripcion='${param.descripcion}'
              where id='${param.id}'
         </sql:update>
-        
             <h1 class="caja-titulo2">Datos Actualizados correctamente</h1>
             <a href="../index.jsp">
             <span>REGRESAR</span> 
             </a>
-        
     </c:if>
             </div>
         </div>
     </div>
-    
 </body>
 </html>

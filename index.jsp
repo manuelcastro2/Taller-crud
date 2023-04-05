@@ -32,24 +32,12 @@
                   <table class="item tres">
                     <thead>
                         <tr>
-                            <th>
-                                cedula
-                            </th>
-                            <th>
-                                nombre
-                            </th>
-                            <th>
-                                area
-                            </th>
-                            <th>
-                                categoria
-                            </th>
-                            <th>
-                                descripcion
-                            </th>
-                            <th colspan="2">
-                            acciones
-                            </th>
+                            <th> cedula</th>
+                            <th>nombre</th>
+                            <th>area</th>
+                            <th>categoria</th>
+                            <th>descripcion</th>
+                            <th colspan="2">acciones</th>
                         </tr>
                     </thead>
                     <tbody>
