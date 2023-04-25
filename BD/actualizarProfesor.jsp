@@ -59,7 +59,7 @@
              where id='${param.id}'
         </sql:update>
             <h1 class="caja-titulo2">Datos Actualizados correctamente</h1>
-            <a href="../index.jsp">
+            <a href="index.jsp">
             <span>REGRESAR</span> 
             </a>
     </c:if>

@@ -48,8 +48,8 @@
                         <td><c:out value="${fila.area}"/></td>
                         <td><c:out value="${fila.categoria}"/></td>
                         <td><c:out value="${fila.descripcion}"/></td>
-                        <td><a class="button2" href="BD/eliminarProfesor.jsp?id=${fila.id}">Eliminar</td>
-                        <td><a class="button2" href="BD/actualizarProfesor.jsp?id=${fila.id}">Editar</td>
+                        <td><a class="button2" href="BD/eliminarProfesor.jsp?id=${fila.id}">Eliminar</a></td>
+                        <td><a class="button2" href="BD/actualizarProfesor.jsp?id=${fila.id}">Editar</a></td>
                         </c:forEach>
                         </tr>
                     </tbody>
